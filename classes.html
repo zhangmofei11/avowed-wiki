@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Guide - Avowed Wiki</title>
+    <meta name="description" content="Complete guide to all Avowed classes. Fighter, Ranger, and Wizard - stats, abilities, and best builds explained.">
+    <meta name="keywords" content="Avowed classes, Avowed Fighter, Avowed Ranger, Avowed Wizard, class guide">
+    <link rel="canonical" href="https://avowed-wiki.com/classes.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        avowed: { 500: '#4A90D9', 600: '#2563EB', 700: '#1D4ED8' },
+                        dark: { 900: '#0f1117', 800: '#1a1d26', 700: '#252936' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0f1117 0%, #1a1d26 50%, #0f1117 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(74, 144, 217, 0.3); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-avowed-500 to-avowed-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">A</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">Avowed Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-avowed-500 transition-colors">Home</a>
+                    <a href="classes.html" class="text-avowed-500 hover:text-avowed-400 transition-colors font-medium">Classes</a>
+                    <a href="builds.html" class="text-gray-300 hover:text-avowed-500 transition-colors">Builds</a>
+                    <a href="quests.html" class="text-gray-300 hover:text-avowed-500 transition-colors">Quests</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-avowed-500 transition-colors">Tips</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Classes Guide</h1>
+            <p class="text-gray-400">Choose your class wisely. Each has unique abilities and playstyles.</p>
+        </div>
+
+        <!-- Class Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Fighter -->
+            <div class="bg-dark-800/80 rounded-xl border border-red-500/30 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-red-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-7xl">⚔️</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="font-cinzel text-2xl font-bold text-white">Fighter</h2>
+                        <span class="px-3 py-1 bg-red-500/20 text-red-400 text-sm rounded-full">S-Tier</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Tanky melee warrior. High survivability with strong close-combat damage. Best class for beginners.</p>
+
+                    <h3 class="text-white font-semibold mb-2">Starting Background</h3>
+                    <p class="text-gray-400 text-sm mb-4">War Hero - boosts Might & Resolve</p>
+
+                    <h3 class="text-white font-semibold mb-2">Core Abilities</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Heavy melee weapons</li>
+                        <li>• Shield blocking</li>
+                        <li>• Stamina management</li>
+                        <li>• Crowd control</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ranger -->
+            <div class="bg-dark-800/80 rounded-xl border border-green-500/30 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-green-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-7xl">🏹</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="font-cinzel text-2xl font-bold text-white">Ranger</h2>
+                        <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 text-sm rounded-full">B-Tier</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Versatile hybrid. Mix of ranged attacks and stealth mechanics. Great for exploration.</p>
+
+                    <h3 class="text-white font-semibold mb-2">Starting Background</h3>
+                    <p class="text-gray-400 text-sm mb-4">Vanguard Scout - boosts Perception, Constitution, Dexterity</p>
+
+                    <h3 class="text-white font-semibold mb-2">Core Abilities</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Bow & arrow</li>
+                        <li>• Stealth mechanics</li>
+                        <li>• Trap setting</li>
+                        <li>• Pet companion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Wizard -->
+            <div class="bg-dark-800/80 rounded-xl border border-purple-500/30 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-purple-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-7xl">🔮</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="font-cinzel text-2xl font-bold text-white">Wizard</h2>
+                        <span class="px-3 py-1 bg-orange-500/20 text-orange-400 text-sm rounded-full">A-Tier</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Highest damage potential. Powerful elemental spells. Requires strategic positioning.</p>
+
+                    <h3 class="text-white font-semibold mb-2">Starting Background</h3>
+                    <p class="text-gray-400 text-sm mb-4">Court Sorcerer - boosts Perception & Intellect</p>
+
+                    <h3 class="text-white font-semibold mb-2">Core Abilities</h3>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Fire, Ice, Shock spells</li>
+                        <li>• Arcane weapons</li>
+                        <li>• AOE attacks</li>
+                        <li>• Multi-classing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multiclass Section -->
+        <section class="mt-12">
+            <h2 class="font-cinzel text-2xl font-bold text-avowed-500 mb-6">Multi-classing</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <p class="text-gray-400 text-sm">Avowed supports multi-classing, allowing you to combine abilities from different classes for unique builds.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-900 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Avowed Wiki. Not affiliated with Obsidian Entertainment.</p>
+        </div>
+    </footer>
+</body>
+</html>

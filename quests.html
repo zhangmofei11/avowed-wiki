@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Walkthroughs - Avowed Wiki</title>
+    <meta name="description" content="Complete quest walkthroughs for Avowed. Main story and side quest guides.">
+    <meta name="keywords" content="Avowed quests, Avowed walkthrough, main quest, side quests">
+    <link rel="canonical" href="https://avowed-wiki.com/quests.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        avowed: { 500: '#4A90D9', 600: '#2563EB', 700: '#1D4ED8' },
+                        dark: { 900: '#0f1117', 800: '#1a1d26', 700: '#252936' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0f1117 0%, #1a1d26 50%, #0f1117 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(34, 197, 94, 0.2); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-avowed-500 to-avowed-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">A</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">Avowed Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-avowed-500 transition-colors">Home</a>
+                    <a href="classes.html" class="text-gray-300 hover:text-avowed-500 transition-colors">Classes</a>
+                    <a href="builds.html" class="text-gray-300 hover:text-avowed-500 transition-colors">Builds</a>
+                    <a href="quests.html" class="text-green-400 hover:text-green-300 transition-colors font-medium">Quests</a>
+                    <a href="tips.html" class="text-gray-300 hover:text-avowed-500 transition-colors">Tips</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Quest Walkthroughs</h1>
+            <p class="text-gray-400">Complete guides for main story and side quests in the Living Lands.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-dark-800/80 rounded-xl border border-green-500/30 p-4 text-center">
+                <div class="text-3xl font-bold text-green-400">30+</div>
+                <div class="text-gray-400 text-sm">Main Quests</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">50+</div>
+                <div class="text-gray-400 text-sm">Side Quests</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-avowed-500">Open World</div>
+                <div class="text-gray-400 text-sm">Living Lands</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">40+</div>
+                <div class="text-gray-400 text-sm">Hours Content</div>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="font-cinzel text-2xl font-bold text-green-400 mb-6">Main Story</h2>
+            <div class="space-y-4">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-avowed-500/20 rounded-lg flex items-center justify-center mr-4">
+                                <span class="text-avowed-400 font-bold">Act 1</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-lg font-bold text-white">The Awakening</h3>
+                                <p class="text-gray-400 text-sm">Begin your journey in the Living Lands</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-avowed-500 hover:text-avowed-400">View →</a>
+                    </div>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-avowed-500/20 rounded-lg flex items-center justify-center mr-4">
+                                <span class="text-avowed-400 font-bold">Act 2</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-lg font-bold text-white">The Revelation</h3>
+                                <p class="text-gray-400 text-sm">Uncover the secrets of the Living Lands</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-avowed-500 hover:text-avowed-400">View →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-900 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Avowed Wiki. Not affiliated with Obsidian Entertainment.</p>
+        </div>
+    </footer>
+</body>
+</html>
